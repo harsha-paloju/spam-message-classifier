@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SMS Spam Detector</title>
+
+    <link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="background"></div>
+
+<div class="main-card">
+
+    <div class="logo">
+        🛡️
+    </div>
+
+    <h1>SMS Spam Detector</h1>
+
+    <p>
+        AI-powered message analysis to identify spam and protect users
+        from fraudulent SMS attacks.
+    </p>
+
+    <form action="/result" method="POST">
+
+        <textarea
+            name="message_text"
+            placeholder="Paste your SMS message here..."
+            required></textarea>
+
+        <button type="submit">
+            Analyze Message
+        </button>
+
+    </form>
+
+</div>
+
+</body>
+
+</html>

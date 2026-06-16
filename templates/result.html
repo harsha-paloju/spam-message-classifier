@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Prediction</title>
+
+    <link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<div class="main-card">
+
+    <div class="logo">
+
+        🤖
+
+    </div>
+
+    <h1>Analysis Result</h1>
+
+    {% if answer=="spam" %}
+
+        <div class="result spam">
+
+            🚨 Potential Spam Detected
+
+        </div>
+
+    {% else %}
+
+        <div class="result safe">
+
+            ✅ Safe Message
+
+        </div>
+
+    {% endif %}
+
+    <a href="/" class="home-btn">
+
+        Analyze Another SMS
+
+    </a>
+
+</div>
+
+</body>
+
+</html>
