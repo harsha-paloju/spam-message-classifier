@@ -8,7 +8,7 @@ The application allows users to enter any SMS message through a simple web inter
 
 ## 🚀 Live Demo
 
->[ *(Add your Render deployment link here after deployment)*](https://spam-message-classifier-2-7s01.onrender.com/)
+https://spam-message-classifier-2-7s01.onrender.com/
 
 ---
 
