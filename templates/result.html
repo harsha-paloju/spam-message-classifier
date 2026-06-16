@@ -5,13 +5,13 @@
 
     <meta charset="UTF-8">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
-    <title>Prediction</title>
+    <title>Prediction Result</title>
 
-    <link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+    <link rel="stylesheet"
+          href="{{ url_for('static',filename='style.css') }}">
 
 </head>
 
@@ -31,21 +31,45 @@
 
     {% if answer=="spam" %}
 
-        <div class="result spam">
+    <div class="result spam">
 
-            🚨 Potential Spam Detected
+        🚨 Potential Spam Detected
 
-        </div>
+    </div>
 
     {% else %}
 
-        <div class="result safe">
+    <div class="result safe">
 
-            ✅ Safe Message
+        ✅ Safe Message
 
-        </div>
+    </div>
 
     {% endif %}
+
+    <div class="info-box">
+
+        <h3>📝 Submitted Message</h3>
+
+        <p class="message">
+
+            {{ message }}
+
+        </p>
+
+    </div>
+
+    <div class="info-box">
+
+        <h3>📊 Confidence</h3>
+
+        <p class="confidence">
+
+            {{ confidence }}%
+
+        </p>
+
+    </div>
 
     <a href="/" class="home-btn">
 

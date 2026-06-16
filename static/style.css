@@ -9,23 +9,15 @@
 
 body{
 
-    height:100vh;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
+    background:#0f172a;
 
     overflow:hidden;
-
-    background:#0f172a;
 
 }
 
 .background{
 
-    position:absolute;
+    position:fixed;
 
     width:100%;
 
@@ -45,23 +37,21 @@ body{
 
     position:relative;
 
-    z-index:100;
+    width:700px;
 
-    width:650px;
+    margin:60px auto;
 
-    padding:45px;
+    padding:40px;
 
     border-radius:25px;
 
-    backdrop-filter:blur(20px);
-
     background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(20px);
 
     border:1px solid rgba(255,255,255,.15);
 
-    box-shadow:
-
-    0 8px 40px rgba(0,0,0,.4);
+    box-shadow:0 10px 40px rgba(0,0,0,.4);
 
 }
 
@@ -75,13 +65,13 @@ body{
 
     border-radius:50%;
 
-    background:linear-gradient(135deg,#2563eb,#9333ea);
-
     display:flex;
 
     justify-content:center;
 
     align-items:center;
+
+    background:linear-gradient(135deg,#2563eb,#9333ea);
 
     font-size:42px;
 
@@ -95,7 +85,7 @@ h1{
 
     text-align:center;
 
-    margin-bottom:10px;
+    margin-bottom:15px;
 
 }
 
@@ -105,8 +95,6 @@ p{
 
     text-align:center;
 
-    margin-bottom:30px;
-
     line-height:28px;
 
 }
@@ -114,6 +102,8 @@ p{
 textarea{
 
     width:100%;
+
+    margin-top:30px;
 
     height:220px;
 
@@ -123,17 +113,17 @@ textarea{
 
     resize:none;
 
-    border-radius:15px;
-
     padding:18px;
 
-    font-size:16px;
+    border-radius:15px;
 
     background:rgba(255,255,255,.08);
 
     color:white;
 
-    border:1px solid rgba(255,255,255,.15);
+    border:1px solid rgba(255,255,255,.2);
+
+    font-size:16px;
 
 }
 
@@ -157,13 +147,13 @@ button{
 
     cursor:pointer;
 
-    font-size:18px;
-
-    font-weight:600;
-
     background:linear-gradient(135deg,#2563eb,#7c3aed);
 
     color:white;
+
+    font-size:18px;
+
+    font-weight:600;
 
     transition:.3s;
 
@@ -173,29 +163,27 @@ button:hover{
 
     transform:translateY(-2px);
 
-    box-shadow:0 8px 20px rgba(37,99,235,.4);
-
 }
 
 .result{
 
     margin-top:25px;
 
-    padding:22px;
+    padding:20px;
 
     border-radius:15px;
 
-    font-size:28px;
-
     text-align:center;
 
-    font-weight:600;
+    font-size:28px;
+
+    font-weight:bold;
 
 }
 
 .spam{
 
-    background:rgba(220,38,38,.15);
+    background:rgba(255,0,0,.15);
 
     color:#ff6b6b;
 
@@ -205,11 +193,57 @@ button:hover{
 
 .safe{
 
-    background:rgba(22,163,74,.15);
+    background:rgba(0,255,0,.12);
 
     color:#4ade80;
 
-    border:1px solid rgba(34,197,94,.3);
+    border:1px solid rgba(0,255,0,.3);
+
+}
+
+.info-box{
+
+    margin-top:25px;
+
+    padding:18px;
+
+    border-radius:15px;
+
+    background:rgba(255,255,255,.08);
+
+    border:1px solid rgba(255,255,255,.15);
+
+}
+
+.info-box h3{
+
+    color:white;
+
+    margin-bottom:10px;
+
+}
+
+.message{
+
+    color:#d1d5db;
+
+    text-align:left;
+
+    line-height:1.7;
+
+    word-wrap:break-word;
+
+}
+
+.confidence{
+
+    color:#60a5fa;
+
+    font-size:26px;
+
+    font-weight:bold;
+
+    text-align:center;
 
 }
 
@@ -219,13 +253,13 @@ button:hover{
 
     margin-top:30px;
 
-    text-align:center;
-
     text-decoration:none;
 
-    padding:15px;
+    text-align:center;
 
-    border-radius:12px;
+    padding:16px;
+
+    border-radius:15px;
 
     background:linear-gradient(135deg,#2563eb,#7c3aed);
 
@@ -233,12 +267,10 @@ button:hover{
 
     font-weight:600;
 
-    transition:.3s;
-
 }
 
 .home-btn:hover{
 
-    transform:translateY(-2px);
+    opacity:.9;
 
 }
